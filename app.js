@@ -1,5 +1,8 @@
-let bank = 25 // They started off with their life savings
+let balance = 25 // They started off with their life savings
+let team1label = document.getElementById('team1')
+let team2label = document.getElementById('team2')
 
+// 20 total players
 const players = [
   { teamNumber: 1, emoji: '🏃‍♂️', skill: 10, name: "D'Marcus Williums" },
   { teamNumber: 1, emoji: '🤾‍♂️', skill: 30, name: "Tyroil Smoochie-Wallace" },
@@ -22,3 +25,40 @@ const players = [
   { teamNumber: 2, emoji: '🧍‍♂️', skill: 3, name: "Dan Smith" },
   { teamNumber: 2, emoji: '🐅', skill: 100, name: "Tiger" },
 ]
+
+function drawTeam1() {
+  let label = ''
+  for (let index = 0; index < players.length; index++) {
+    const player = players[index];
+    if (player.teamNumber == 1)
+      label += player.emoji
+    team1label.innerText = label
+  }
+}
+
+
+
+
+
+// ANCHOR work on this part later
+
+function betTeam1() { //Randomize Teams, then gather all players based on team and compare which total skill is higher
+  let team1Skill = 0
+  let team2Skill = 0
+
+  for (let index = 0; index < players.length; index++) {
+    const element = players[index];
+
+  }
+}
+
+function randomizeTeams() {
+  let teams = Math.round(Math.random() * players.length)
+
+  console.log(teams)
+
+
+}
+
+// createNewTeams(){
+// }

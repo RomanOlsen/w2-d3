@@ -11,28 +11,54 @@
 </head>
 
 <!-- Idea Betting Mode by default (shows icons) -->
-<!-- And Gambling Mode option (hides icons, pure gamble) -->
+<!-- And Gamble Mode option (hides icons, pure gamble) -->
+<!-- Could use a d-none add/remove command for the label -->
 
 <body>
   <header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 text-center">
-          <h1>The Casino</h1>
-
+          <h1 class="mt-5">Sports Betting/Casino</h1>
         </div>
-
       </div>
     </div>
   </header>
 
   <main>
-    <div>Test</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="card m-5 text-center">
+            <h2 class="card-header">Balance:</h2>
+            <span id="balance"> $25 </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <div class="card m-3 text-center">
+            <h2 class="card-header">Team 1</h2>
+            <span id="team1"> players here </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card m-3 text-center">
+            <h2 class="card-header">Team 2</h2>
+            <span id="team2"> players here </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </main>
 
+
+  <!-- SECTION Buttons -->
   <footer>
     <div class="container-fluid">
       <div class="row">
@@ -41,9 +67,10 @@
           <button id="Bet" class="btn btn-primary betButton text-center" type="button">$20</button>
           <button id="Bet" class="btn btn-primary betButton text-center" type="button">$50</button>
           <button id="Bet" class="btn btn-primary betButton text-center" type="button">$100</button>
-          <button id="Bet" class="btn btn-primary betButton text-center" type="button">$500</button>
-
-          <button id="Bet" class="btn btn-primary betButton text-center" type="button">All In on Team 1</button>
+          <button onclick="drawTeam1()" id="Bet" class="btn btn-primary betButton text-center"
+            type="button">$500</button>
+          <button onclick="randomizeTeams()" id="Bet" class="btn btn-danger betButton text-center" type="button">All In
+            on Team 1</button>
         </div>
         <div class="col-6 text-center">
           <button id="Bet" class="btn btn-warning betButton text-center" type="button">$1</button>
@@ -51,7 +78,7 @@
           <button id="Bet" class="btn btn-warning betButton text-center" type="button">$50</button>
           <button id="Bet" class="btn btn-warning betButton text-center" type="button">$100</button>
           <button id="Bet" class="btn btn-warning betButton text-center" type="button">$500</button>
-          <button id="Bet" class="btn btn-warning betButton text-center" type="button">All In on Team 2</button>
+          <button id="Bet" class="btn btn-danger betButton text-center" type="button">All In on Team 2</button>
         </div>
       </div>
     </div>

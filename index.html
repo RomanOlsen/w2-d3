@@ -63,22 +63,33 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-6 text-center">
-          <button id="Bet" class="btn btn-primary betButton text-center" type="button">$1</button>
-          <button id="Bet" class="btn btn-primary betButton text-center" type="button">$20</button>
-          <button id="Bet" class="btn btn-primary betButton text-center" type="button">$50</button>
-          <button id="Bet" class="btn btn-primary betButton text-center" type="button">$100</button>
-          <button onclick="drawTeam1()" id="Bet" class="btn btn-primary betButton text-center"
+          <button onclick="updateBalanceAfterTeam1Bet(1)" id="Bet" class="btn btn-primary betButton text-center"
+            type="button">$1</button>
+          <button onclick="updateBalanceAfterTeam1Bet(20)" id="Bet" class="btn btn-primary betButton text-center"
+            type="button">$20</button>
+          <button onclick="updateBalanceAfterTeam1Bet(50)" id="Bet" class="btn btn-primary betButton text-center"
+            type="button">$50</button>
+          <button onclick="updateBalanceAfterTeam1Bet(100)" id="Bet" class="btn btn-primary betButton text-center"
+            type="button">$100</button>
+          <button onclick="updateBalanceAfterTeam1Bet(500)" id="Bet" class="btn btn-primary betButton text-center"
             type="button">$500</button>
-          <button onclick="randomizeTeams()" id="Bet" class="btn btn-danger betButton text-center" type="button">All In
+          <button onclick="updateBalanceAfterTeam1Bet(balance)" id="Bet" class="btn btn-danger betButton text-center"
+            type="button">All In
             on Team 1</button>
         </div>
         <div class="col-6 text-center">
-          <button id="Bet" class="btn btn-warning betButton text-center" type="button">$1</button>
-          <button id="Bet" class="btn btn-warning betButton text-center" type="button">$20</button>
-          <button id="Bet" class="btn btn-warning betButton text-center" type="button">$50</button>
-          <button id="Bet" class="btn btn-warning betButton text-center" type="button">$100</button>
-          <button id="Bet" class="btn btn-warning betButton text-center" type="button">$500</button>
-          <button id="Bet" class="btn btn-danger betButton text-center" type="button">All In on Team 2</button>
+          <button onclick="updateBalanceAfterTeam2Bet(1)" id="Bet" class="btn btn-warning betButton text-center"
+            type="button">$1</button>
+          <button onclick="updateBalanceAfterTeam2Bet(20)" id="Bet" class="btn btn-warning betButton text-center"
+            type="button">$20</button>
+          <button onclick="updateBalanceAfterTeam2Bet(50)" id="Bet" class="btn btn-warning betButton text-center"
+            type="button">$50</button>
+          <button onclick="updateBalanceAfterTeam2Bet(100)" id="Bet" class="btn btn-warning betButton text-center"
+            type="button">$100</button>
+          <button onclick="updateBalanceAfterTeam2Bet(500)" id="Bet" class="btn btn-warning betButton text-center"
+            type="button">$500</button>
+          <button onclick="updateBalanceAfterTeam2Bet(balance); drawTeams()" id="Bet"
+            class="btn btn-danger betButton text-center" type="button">All In on Team 2</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+main {
+  flex-grow: 1;
+}
+
+.betButton {
+  min-width: 100dvh;
+}
